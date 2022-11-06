@@ -1,0 +1,225 @@
+/* using defult sections */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    background-color: #f5f5f5;
+}
+img{
+    width: 100%;
+}
+p{
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+/* nav bar sections... */
+nav{
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+nav ul li{
+    padding: 4px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 4px;
+    
+}
+
+.container-btn{
+    background-color: #ff5a5f;
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* header sections */
+header{
+    height: 80vh;
+    width: 100%;
+    background: url(./images/headerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-containt{
+    text-align: center;
+    padding: 10px;
+}
+.header-containt h1{
+    font-size: 3.5rem;
+    color: #142113;
+    padding: 10px;
+    margin-top: 10px;
+}
+.header-containt a{
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* body sectionss.. */
+.container-flex{
+    display: flex;
+    max-width: 1900px;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #ffff;
+}
+main{
+    padding: 10px;
+}
+.post-content{
+    padding: 10px;
+}
+.post-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+}
+/* .post-info span{
+    margin: 4px;
+} */
+.post-info a{
+    text-decoration: none;
+}
+.post-content h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #14243d;
+}
+aside{
+    padding: 10px;
+}
+.about-me{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.about-me img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* footer container */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    background-color: rgb(66, 66, 94);
+
+}
+
+footer .footer-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .first-span{
+    font-size: 5rem;
+    padding: 10px;
+    color: goldenrod;
+}
+.footer-container p{
+    color: grey;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.phone-number{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.phone-number i{
+    padding-right: 10px;
+}
+.masseges a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.socile-media{
+    position: relative;
+    bottom: 1rem;
+}
+.socile-media a {
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* mobile first responsive desgin */
+@media(min-width: 675px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 30%;
+    }
+    .container-flex{
+        flex-direction: row;
+    }
+}
